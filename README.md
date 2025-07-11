@@ -9,25 +9,6 @@
 - Вход для уже зарегистрированных пользователей.
 - Возможность работы с сессиями для сохранения состояния входа.
 
-## Установка
 
-Для запуска проекта на вашем локальном компьютере, выполните следующие шаги:
 
-### 1. Установите XAMPP
 
-Если у вас еще нет XAMPP, скачайте его с [официального сайта XAMPP](https://www.apachefriends.org/download.html) и установите.
-
-### 2. Настройте базу данных
-
-1. Запустите XAMPP и включите **Apache** и **MySQL**.
-2. Откройте **phpMyAdmin** в браузере (обычно доступен по адресу `http://localhost/phpmyadmin`).
-3. Создайте новую базу данных с именем `massage_salon`.
-4. В базе данных создайте таблицу пользователей (например, `users`) со следующими полями:
-   ```sql
-   CREATE TABLE users (
-       id INT(11) AUTO_INCREMENT PRIMARY KEY,
-       username VARCHAR(255) NOT NULL,
-       email VARCHAR(255) NOT NULL,
-       password VARCHAR(255) NOT NULL,
-       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-   );
